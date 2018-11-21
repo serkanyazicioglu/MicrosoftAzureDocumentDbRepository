@@ -5,6 +5,11 @@ VisualStudioVersion = 15.0.28010.2046
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nhea.Data.Repository.MicrosoftAzureDocumentDbRepository", "Nhea.Data.Repository.MicrosoftAzureDocumentDbRepository\Nhea.Data.Repository.MicrosoftAzureDocumentDbRepository.csproj", "{A0676C7E-C366-4F31-A7ED-1DF662675F26}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{57897F98-F1E3-443E-8F6A-D874AB1B60CD}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
