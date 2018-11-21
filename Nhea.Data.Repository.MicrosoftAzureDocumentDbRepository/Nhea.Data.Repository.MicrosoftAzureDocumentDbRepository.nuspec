@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Nhea.Data.Repository.MicrosoftAzureDocumentDbRepository</id>
+    <version>1.0.0.0</version>
+    <title>$title$</title>
+    <authors>Serkan Yazıcıoğlu</authors>
+    <owners>serkanyazicioglu</owners>
+    <licenseUrl>http://opensource.org/licenses/MS-PL</licenseUrl>
+    <projectUrl>https://github.com/serkanyazicioglu/MicrosoftAzureDocumentDbRepository</projectUrl>
+    <iconUrl>http://github.com/contoso/UsefulStuff/nuget_icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Microsoft Azure DocumentDb repository classes.</description>
+    <releaseNotes>Base repository classes for Azure DocumentDb.</releaseNotes>
+    <copyright>Copyright 2018</copyright>
+    <tags>microsoft, azure, document db, cosmos, repository, nhea</tags>
+  </metadata>
+</package>
