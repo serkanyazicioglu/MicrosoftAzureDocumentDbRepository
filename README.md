@@ -22,6 +22,7 @@ Project is built with .NET Framework 4.6.1.
 
 This project references;
 
+- Nhea > 1.5.1
 - Microsoft.Azure.DocumentDB > 1.22
 - Microsoft.Azure.CosmosDB.BulkExecutor > 1.0.1
 
