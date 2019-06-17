@@ -13,6 +13,7 @@ namespace SampleApp
         {
             Guid newMemberId = Guid.NewGuid();
 
+            //New Entity
             using (MemberRepository memberRepository = new MemberRepository())
             {
                 var member = memberRepository.CreateNew();
@@ -24,6 +25,7 @@ namespace SampleApp
                 memberRepository.Save();
             }
 
+            //Update Multiple Entity
             using (MemberRepository memberRepository = new MemberRepository())
             {
                 var members = memberRepository.GetAll(query => query.Timestamp >= DateTime.Today).ToList();
@@ -36,6 +38,7 @@ namespace SampleApp
                 memberRepository.Save();
             }
 
+            //Update Single Entity
             using (MemberRepository memberRepository = new MemberRepository())
             {
                 var member = memberRepository.GetSingle(query => query.Id == newMemberId);
@@ -47,16 +50,18 @@ namespace SampleApp
                 }
             }
 
+            //IsNew
+            using (MemberRepository memberRepository = new MemberRepository())
+            {
+                var member = memberRepository.CreateNew();
+                Console.WriteLine("Is my entity new? Answer: " + memberRepository.IsNew(member));
+            }
+
+            //Delete Entity
             using (MemberRepository memberRepository = new MemberRepository())
             {
                 memberRepository.Delete(query => query.Title == "Selected Member 2");
                 memberRepository.Save();
-            }
-
-            using (MemberRepository memberRepository = new MemberRepository())
-            {
-                var member = memberRepository.CreateNew();
-                bool isNew = memberRepository.IsNew(member);
             }
         }
     }

@@ -1,3 +1,4 @@
+[![Build Status](https://dev.azure.com/serkanyazicioglu/serkanyazicioglu/_apis/build/status/serkanyazicioglu.MicrosoftAzureDocumentDbRepository?branchName=master)](https://dev.azure.com/serkanyazicioglu/serkanyazicioglu/_build/latest?definitionId=5&branchName=master)
 [![NuGet](https://img.shields.io/nuget/v/Nhea.Data.Repository.MicrosoftAzureDocumentDbRepository.svg)](https://www.nuget.org/packages/Nhea.Data.Repository.MicrosoftAzureDocumentDbRepository/)
 
 # Nhea Microsoft Azure DocumentDb Repository
@@ -11,6 +12,10 @@ Nhea is on NuGet. You may install Nhea Microsoft Azure DocumentDb Repository via
 
 https://www.nuget.org/packages/Nhea.Data.Repository.MicrosoftAzureDocumentDbRepository/
 
+```
+Install-Package Nhea.Data.Repository.MicrosoftAzureDocumentDbRepository
+```
+
 ### Prerequisites
 
 Project is built with .NET Framework 4.6.1. 
@@ -20,13 +25,13 @@ This project references;
 - Microsoft.Azure.DocumentDB > 1.22
 - Microsoft.Azure.CosmosDB.BulkExecutor > 1.0.1
 
-Click the link below to download Azure Storage Explorer.
+I highly suggest you to use Azure Storage Explorer. Click the link below to download.
 
 https://azure.microsoft.com/en-us/features/storage-explorer/
 
 ### Configuration
 
-First of all creating a base repository class is a good idea to set basic properties.
+First of all creating a base repository class is a good idea to set basic properties like connection string.
 
 ```
 public class BaseDocDbRepository<T> : BaseDocumentDbRepository<T> where T : Microsoft.Azure.Documents.Resource, new()
