@@ -1,6 +1,11 @@
 [![Build Status](https://dev.azure.com/serkanyazicioglu/serkanyazicioglu/_apis/build/status/serkanyazicioglu.MicrosoftAzureDocumentDbRepository?branchName=master)](https://dev.azure.com/serkanyazicioglu/serkanyazicioglu/_build/latest?definitionId=5&branchName=master)
 [![NuGet](https://img.shields.io/nuget/v/Nhea.Data.Repository.MicrosoftAzureDocumentDbRepository.svg)](https://www.nuget.org/packages/Nhea.Data.Repository.MicrosoftAzureDocumentDbRepository/)
 
+# Deprecation
+
+DocumentDB and related packages are not supported anymore. This library will not be maintained nor updated.
+
+
 # Nhea Microsoft Azure DocumentDb Repository
 
 Microsoft Azure DocumentDb base repository classes.
